@@ -24,7 +24,6 @@ function clickMath(){
     clearInput()
     })
     
-
     document.querySelector(".minus").addEventListener('click', function(){
     const minus = getInput().firstInput - getInput().secondInput
     document.querySelector(".result").innerText = minus

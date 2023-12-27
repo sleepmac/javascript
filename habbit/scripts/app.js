@@ -14,7 +14,7 @@ function loadData() {
 	const habbitArray = JSON.parse(habbitsString);
 	if (Array.isArray(habbitArray)) {
 		habbits = habbitArray;
-	} 
+	}
 }
 
 function saveData() {

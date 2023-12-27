@@ -12,22 +12,22 @@ const toDoList={
         }
     ],
 
-    addTask: function(title, priority){
+    addTask(title, priority){
         const id = this.task.map(id => id.id).sort((a, b) => b - a)[0] + 1
         return this.task.push({title, id, priority}) 
         },
 
-    removeTask: function(id){
+    removeTask(id){
         const index = this.task.findIndex(i => i.id === id)
         return this.task.splice(index, 1)
     },
 
-    refreshTitle: function(title, id) {
+    refreshTitle(title, id) {
         const index = this.task.findIndex(i => i.id === id)
         return this.task[index].title = title        
     },
 
-    sortPriority: function(){
+    sortPriority(){
         return this.task.sort((a,b) => b.priority - a.priority)
     }
 }
